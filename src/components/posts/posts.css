@@ -1,0 +1,15 @@
+.posts{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px;
+    padding-top:10px;
+}
+
+@media(max-width:700px)
+{
+    .posts{
+        padding-top:10px;
+    }
+    
+}

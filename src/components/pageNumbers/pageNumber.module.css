@@ -1,0 +1,44 @@
+.pageNumber{
+    display:flex;
+    position:center;
+    margin:auto;
+    justify-content: center;
+}
+
+.pageNumbers{
+    border:2px solid blue;
+    background-color:blue;
+    width:20px;
+    height:20px;
+    margin:10px;
+    padding:5px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.currentPage{
+    border:2px solid red;
+    cursor:pointer;
+}
+
+.prevNext{
+    width:40px;
+}
+
+/* adding media queries */
+@media(max-width:600px)
+{
+ .pageNumbers{
+    width:15px;
+    height:15px;
+    font-size:14px;
+    justify-content:center;
+ }
+
+ .prevNext{
+    width:30px;
+}
+}
