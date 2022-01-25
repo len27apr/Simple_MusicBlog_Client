@@ -20,7 +20,7 @@
     margin-top:20px;
     margin-left:29%;
     width:40%;
-    font-size:14px;
+    font-size:12px;
 }
 
 .MiniCategoriesListItem{
@@ -32,7 +32,7 @@
     border:2px solid rgb(125, 41, 194);
     border-radius:10px;
     width: 60%;
-    font-size:13px;
+    font-size:11px;
     align-self:center;
 }
 
@@ -43,8 +43,7 @@
     flex-direction:column; 
     flex-wrap:wrap;
     height:270px;
-    padding-left: 20px;
-    padding-bottom:2px;
+    padding-left: 2%;
     margin-bottom:10px;
 }
 
