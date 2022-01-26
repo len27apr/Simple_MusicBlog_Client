@@ -78,7 +78,7 @@ export const PageNumbers = ({ lastPage, currentValue, hasNextValue, hasPrevValue
     // console.log('the fourth value is: ', fourthValue);
 
     useEffect(() => {
-        console.log('use Effect running in pageNumber.js')
+        // console.log('use Effect running in pageNumber.js')
         if ((secondValueChanged || thirdValueChanged || fourthValueChanged) && hasNext) {
             setPagesData(prevState => {
                 return {

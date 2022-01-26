@@ -112,3 +112,12 @@
   align-items: center;
   margin:10px;
 }
+
+.logoutUser{
+  text-decoration: underline;
+  align-self:center;
+  margin:20px;
+  text-underline-offset: 3px;
+  letter-spacing: 2px;
+  cursor:pointer;
+}

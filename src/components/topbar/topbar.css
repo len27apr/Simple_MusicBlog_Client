@@ -21,6 +21,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right:5px;
+}
+
+.topLeft{
+  flex:2;
+  margin-left:10px;
 }
 
 .topIcon {
@@ -91,6 +97,9 @@
   cursor: pointer;
 }
 
+.userHome{
+  margin-right: 5%;
+}
 
 /* media queries applied  */
 @media(max-width:600px)
@@ -102,8 +111,9 @@
   
   .topCenter>:first-of-type{
     /* border:2px solid blue;  */
-    font-size:14px;
-    padding-right:15%;
+    font-size:15px;
+    padding-right:10%;
+    width:90%;
   }
 
   .topCenter>:first-of-type>:not(:first-child){
@@ -121,12 +131,18 @@
   }
 
   .topList>:first-child.topListItemHome{
-    margin-right: 3%; 
+    margin-right: 70%; 
     /* border:2px solid green; */
     /* font-size:15px; */
-    margin-left:10px;
+    margin-left:15px;
   }
   
+  .topList>:first-child.userHome{
+    margin-right: 5%; 
+    /* border:2px solid green; */
+    /* font-size:15px; */
+    margin-left:5px;
+  }
   .topList>:first-child:not(.topListItemHome){
     margin-right: 4%; 
     font-size:15px;
@@ -148,7 +164,7 @@
 
   .topRight>.topList {
     /* border:2px solid blue;  */
-    font-size:14px;
+    font-size:15px;
   }
 
   .topImg {
@@ -166,4 +182,5 @@
     cursor: pointer;
     margin-left:10px;
   }
+
 }

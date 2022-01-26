@@ -4,15 +4,10 @@ import { Context } from "../../context/Context";
 import "./topbar.css";
 
 export default function Topbar() {
-  const {user,dispatch} = useContext(Context);
+  const {user} = useContext(Context);
   // const PF='http://localhost:8000/';
   
-  const handleLogout=()=>{
-    dispatch({type:'LOGOUT'});
-    localStorage.removeItem('user');
-    localStorage.removeItem('token');
-  }
-  
+  const homeButtonClasses=['topListItemHome',user && 'userHome'];
 
   return (
     <div className="top">
@@ -24,7 +19,7 @@ export default function Topbar() {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItemHome">
+          <li className={homeButtonClasses.join(" ")}>
             <Link className="link" to="/">
               HOME
             </Link>
@@ -36,7 +31,9 @@ export default function Topbar() {
               WRITE
             </Link>
           </li>}
-          {user && <li className="topListItem" onClick={handleLogout}>LOGOUT</li>}
+          {user && <li className="topListItem"><Link to={`/?username=${user.username}`} className='link'>
+              MY POSTS
+            </Link></li>}
         </ul>
       </div>
       <div className="topRight">

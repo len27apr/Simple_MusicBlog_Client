@@ -34,6 +34,12 @@ export default function Settings() {
       window.location.replace('/');
     }
   }
+  
+  const handleLogout=()=>{
+    dispatch({type:'LOGOUT'});
+    localStorage.removeItem('user');
+    localStorage.removeItem('token');
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -128,6 +134,7 @@ export default function Settings() {
           <button className="settingsSubmitButton" type="submit">
             Update
           </button>
+          <p className="logoutUser" onClick={handleLogout}>LOGOUT</p>
           {success && <span style={{ color: 'green', textAlign: 'center' }}>Profile has been updated...</span>}
         </form>
       </div>

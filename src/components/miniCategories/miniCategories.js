@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const MiniCategories = () => {
     const [categories, setCategories] = useState([]);
     useEffect(() => {
-        console.log('use Effect running in miniCaegories');
+        // console.log('use Effect running in miniCaegories');
         const getCategories = async () => {
             const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/categories`);
             setCategories(res.data)

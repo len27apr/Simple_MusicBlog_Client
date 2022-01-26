@@ -83,7 +83,7 @@ export default function Homepage() {
   useEffect(() => {
     const fetchPosts = async () => {
       let response;
-      console.log('use Effect called in homepage.js');
+      // console.log('use Effect called in homepage.js');
       // if (searchValue === 'cat') {
       //   response = await axios.get(`/posts${search}&currentPage=${selectedPage}`);
       // }
