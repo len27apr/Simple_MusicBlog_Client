@@ -11,7 +11,8 @@ export default function Register() {
     const [isUserTouched,setIsUserTouched]=useState(false)
     const [isEmailTouched,setIsEmailTouched]=useState(false)
     const [isPasswordTouched,setIsPasswordTouched]=useState(false);
-    
+  
+
     let isUserInvalid=false;
     let isEmailInvalid=false;
     let isPasswordInvalid=false;
@@ -36,7 +37,8 @@ export default function Register() {
                 email,
                 password,
               });
-              res.data && window.location.replace("/login");
+              // res.data && window.location.replace("/login");   
+              res.data && window.location.replace("https://simple-musicblog.netlify.app/login");
             }
             catch(error)
             {
