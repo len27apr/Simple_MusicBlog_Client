@@ -1,7 +1,7 @@
 import classes from "./register.module.css"
 import {useState} from 'react';
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 
 export default function Register() {
     const [username,setUsername]=useState('');
@@ -11,7 +11,7 @@ export default function Register() {
     const [isUserTouched,setIsUserTouched]=useState(false)
     const [isEmailTouched,setIsEmailTouched]=useState(false)
     const [isPasswordTouched,setIsPasswordTouched]=useState(false);
-  
+    const history = useHistory();
 
     let isUserInvalid=false;
     let isEmailInvalid=false;
@@ -39,7 +39,7 @@ export default function Register() {
               });
               // res.data && window.location.replace("/login");   
               // res.data && window.location.replace("https://simple-musicblog.netlify.app/login");
-              history.push('/login');
+              history.replace('/login');
             }
             catch(error)
             {
