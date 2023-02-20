@@ -19,7 +19,6 @@ const WritePage = React.lazy(() => import("./pages/write/Write"))
 
 function App() {
   const { user } = useContext(Context);
-  console.log('the user is: ', user);
   return (
     <Router>
       <Topbar />
