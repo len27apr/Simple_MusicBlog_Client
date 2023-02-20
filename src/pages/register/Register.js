@@ -39,7 +39,7 @@ export default function Register() {
               });
               // res.data && window.location.replace("/login");   
               // res.data && window.location.replace("https://simple-musicblog.netlify.app/login");
-              history.replace('/login');
+              res.data && history.replace('/login');
             }
             catch(error)
             {
