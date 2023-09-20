@@ -101,7 +101,6 @@ export default function Homepage() {
           `${process.env.REACT_APP_BACKEND_URL}/posts`
         );
       }
-      setIsLoading(false);
       setPosts(response.data.posts);
       setPagesData((prevState) => {
         return {
@@ -116,6 +115,7 @@ export default function Homepage() {
           fourthValue: 4,
         };
       });
+      setIsLoading(false);
     };
     fetchPosts();
   }, [search]);
